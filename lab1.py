@@ -18,7 +18,7 @@ for i in range(0, len(alphabet)):
 dict = shift + dict
 print(list(dict), len(alphabet), len(dict))
 
-file = open("govno i mir.txt", "r",encoding="utf-8")
+file = open("v   i mir.txt", "r",encoding="utf-8")
 text = file.read()
 
 # удаление некириллических символов
