@@ -87,12 +87,43 @@ print(orig_dict_bigram)
 
 print("кодированный"," | ","оригинальный")
 for i in range(len(code_dict_bigram)-1,len(code_dict_bigram)-6,-1):
-    print(orig_dict_bigram[i], code_dict_bigram[i])
+    print(orig_dict_bigram[i][1]/len(text_orig), code_dict_bigram[i][1]/len(text_orig))
 
 fclear = open("outp_clear.txt", "w+", encoding="utf-8")
 fclear.write(text_orig)
 fcode = open("outp_code.txt", "w+", encoding="utf-8")
 fcode.write(text_code)
+
+dictDecode = [i for i in range(0,33 )]
+for i in range(0,len(code_dict_bigram)):
+    for j in range(0,len(code_dict_bigram)):
+        if orig_dict_bigram[i][1]/len(text_orig) == code_dict_bigram[i][1]/len(text_orig) and orig_dict_bigram[j][1]/len(text_orig) > 0:
+            # print(alphabet.find(orig_dict_bigram[i][0][0]))
+            dictDecode[alphabet.find(code_dict_bigram[i][0][0])] = orig_dict_bigram[i][0][0]
+            dictDecode[alphabet.find(code_dict_bigram[i][0][1])] = orig_dict_bigram[i][0][1]
+
+            # print(orig_dict_bigram[i][1]/len(text_orig), code_dict_bigram[i][1]/len(text_orig))
+            # dictDecode.replace(orig_dict_bigram[i][0][0],code_dict_bigram[i][0][0])
+            # print(orig_dict_bigram[i][0][0],code_dict_bigram[i][0][0])
+            # dictDecode.replace(orig_dict_bigram[i][0][1],code_dict_bigram[i][0][1])
+
+print(dictDecode)
+
+text_decode = ""
+# for i in range(0,len(dictDecode)):
+#     print(dictDecode[i], "=>", alphabet[i])
+# text_code += dict[alphabet.find(char)]
+for char in text_code:
+    if char == " ":
+        text_decode += " "
+    else:
+        text_decode += alphabet["".join(dictDecode).find(char)]
+        # print("".join(dictDecode).find(char), alphabet["".join(dictDecode).find(char)])
+
+print(text_decode)
+
+decoded = open("decoded.txt", "w+", encoding="utf-8")
+decoded.write(text_decode)
 
 
 
