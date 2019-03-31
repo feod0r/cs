@@ -1,16 +1,18 @@
 # Информационная безопасность: лабораторные и практические работы 
 **Лабораторные**
-|Номер| Название|Файл|
-|--|--|--|
-| 1 | Шифр цезаря, кодер, анализатор, декодер | [lab1.py](https://github.com/feod0r/cs/blob/master/lab1.py "lab1.py")|
-|2|Алгоритм Деффи-хеллмана|[d-h.py](https://github.com/feod0r/cs/blob/master/d-h.py "d-h.py")|
+
+| Номер | Название | Файл |
+|---|---|---|
+| 1 | Шифр цезаря, кодер, анализатор, декодер | [lab1.py](https://github.com/feod0r/cs/blob/master/lab1.py "lab1.py") |
+| 2 | Алгоритм Деффи-хеллмана|[d-h.py](https://github.com/feod0r/cs/blob/master/d-h.py "d-h.py") |
 
 **Практические**
-|Номер|Название|Файл|
+
+| Номер | Название | Файл |
 |--|--|--|
-|1|Хэш функция 1|[lab2.1.py](https://github.com/feod0r/cs/blob/master/lab2.1.py "lab2.1.py")|
-|2|Хэш функция 2|[lab2.2.py](https://github.com/feod0r/cs/blob/master/lab2.2.py "lab2.2.py")|
-|3|Хэш функция 3|[lab2.3.py](https://github.com/feod0r/cs/blob/master/lab2.3.py "lab2.3.py")|
+| 1 | Хэш функция 1|[lab2.1.py](https://github.com/feod0r/cs/blob/master/lab2.1.py "lab2.1.py") |
+| 2 | Хэш функция 2|[lab2.2.py](https://github.com/feod0r/cs/blob/master/lab2.2.py "lab2.2.py") |
+| 3 | Хэш функция 3|[lab2.3.py](https://github.com/feod0r/cs/blob/master/lab2.3.py "lab2.3.py") |
 ## Шифр цезаря.
 В начале программы указывается алфавит и строка,  на которую необходимо его сдвинуть.
 
