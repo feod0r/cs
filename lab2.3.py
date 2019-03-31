@@ -30,4 +30,4 @@ for j in range(1000,1030):
     for i in range(0,len(str(inp))):
         # random.seed(i)
         hash = (strToInt(hash << strToInt(convert_base( int(ord(str(inp)[i])**3.5)*i ,31,29)))) + (ord(str(inp)[i])<< (int(ord(str(inp)[i])**0.5)) )
-    print(j, inp,hash)    # for i in range(0,len(str(inp))):
+    print(j, inp+convert_base(strToInt(hash),29,13))    # for i in range(0,len(str(inp))):
